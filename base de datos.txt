@@ -1,0 +1,20 @@
+--
+-- Base de datos: `hotel`
+--
+
+
+
+CREATE TABLE IF NOT EXISTS cliente (
+  id int(11) NOT NULL auto_increment,
+  nombre varchar(40) NOT NULL,
+  dni int(8) NOT NULL,
+  celular varchar(15) NOT NULL,
+  direccion varchar(60) NOT NULL,
+  lugar varchar(40) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB;
+
+
+INSERT INTO cliente VALUES
+(1, 'Juan Perez', 12345678, '959765345', 'Jr. Arquipos 345', 'Arequipa'),
+(2, 'Maria Dolores', 7777777, '958763456', 'Jr. Lima 345435', 'Lima');

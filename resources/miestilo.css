@@ -1,0 +1,10 @@
+#mensaje{
+	background-color: #16A05D;
+	font-style: courier;
+	border: 1px solid black;
+	margin: 5px;
+	display: none;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
