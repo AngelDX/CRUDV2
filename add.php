@@ -42,7 +42,7 @@
   $('#cerrar').click(function(){
     $('#formulario').slideUp('slow');
   });
-$("input,select,textarea").not("[type=submit]").jqBootstrapValidation();
+
   $('#guardar').click(function(){
       $.post("crud.php", $("#frm").serialize(),function(data){
         $('#mensaje').html(data).fadeIn('slow').fadeOut(4000);

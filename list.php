@@ -37,14 +37,16 @@
 	</div>
 <script>
 	var eliminar=function(codigo){
-		$.post("crud.php",{id:codigo,opt:"del"},function(data){
-	      $('#mensaje').html(data).fadeIn('slow').fadeOut(4000);
-	      $('#listar').load("list.php").fadeIn('slow');
-	    });
+		if(confirm("¿se va eliminar el registro?")){
+			$.post("crud.php",{id:codigo,opt:"del"},function(data){
+		      $('#mensaje').html(data).fadeIn('slow').fadeOut(4000);
+		      $('#listar').load("list.php").fadeIn('slow');
+		    });
+		}
+		return false;		
 	}
 
 	var editar=function(codigo){
-		console.log(codigo);
 		$('#formulario').load("edit.php",{id:codigo}).slideDown('slow');
 	}
 </script>
