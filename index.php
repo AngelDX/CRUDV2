@@ -32,9 +32,9 @@
 </html>
 <script>
 	$(document).ready(function(){
-		$('#listar').load("list.php").fadeIn('slow');
+		$('#listar').load("views/list.php").fadeIn('slow');
 		$('#nuevo').click(function(){
-			$('#formulario').load("add.php").slideDown('slow');
+			$('#formulario').load("views/add.php").slideDown('slow');
 		});
 	});
 </script>
